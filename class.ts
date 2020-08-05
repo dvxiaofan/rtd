@@ -1,35 +1,25 @@
-class Animal {
-	name: string;
-	constructor(name: string) {
-		this.name = name;
-	}
-	run() {
-		return `${this.name} is running`;
-	}
+interface Radio {
+	switchRadio(): void;
 }
 
-const snake = new Animal('lily');
-
-class Dog extends Animal {
-	bark() {
-		return `${this.name} is barking`;
-	}
+interface Battery {
+	checkBatteryStatus(): void;
 }
 
-const xiaoBao = new Dog('xiaobao');
-
-// console.log(xiaoBao.run());
-// console.log(xiaoBao.bark());
-
-class Meow extends Animal {
-	constructor(name) {
-		super(name);
-		console.log(this.name);
-	}
-	run() {
-		return `Meow, ${super.run()}`;
-	}
+interface RadioWithBattery extends Radio {
+	checkBatteryStatus();
 }
 
-const mao = new Meow('mao');
-console.log(mao.run());
+class Car implements Radio {
+	switchRadio() {}
+}
+
+class Phone implements Radio, Battery {
+	switchRadio() {}
+	checkBatteryStatus() {}
+}
+
+class CellPhone implements RadioWithBattery {
+	switchRadio() {}
+	checkBatteryStatus() {}
+}
