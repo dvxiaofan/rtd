@@ -1,6 +1,13 @@
-function echo<T>(arg: T): T {
+interface IWithLength {
+	length: number;
+}
+
+function echoWithLength<T extends IWithLength>(arg: T): T {
+	console.log(arg.length);
 	return arg;
 }
 
-const result = echo('hello');
-const result2 = echo(23);
+const str = echoWithLength('str');
+const obj = echoWithLength({ length: 10, width: 90 });
+const arr2 = echoWithLength([1, 3, 5]);
+echoWithLength(12);
