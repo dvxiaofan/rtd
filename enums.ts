@@ -6,3 +6,4 @@ enum Direction {
 }
 
 console.log(Direction.Up);
+console.log(Direction[0]);
