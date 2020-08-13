@@ -6,6 +6,7 @@
   "author": "xiaofan <1353815633@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "@types/jquery": "^3.5.1"
+    "@types/jquery": "^3.5.1",
+    "@types/react": "^16.9.46"
   }
 }
