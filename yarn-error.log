@@ -1,0 +1,38 @@
+Arguments: 
+  /Users/xiaofan/.nvm/versions/node/v10.21.0/bin/node /usr/local/bin/yarn add @types/jquery
+
+PATH: 
+  /Users/xiaofan/.nvm/versions/node/v10.21.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/b‌​:/usr/local/mysql-8.0.13-macos10.14-x86_64/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.21.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: http://10.170.3.50:8040/artifactory/api/npm/npm/@types%2fjquery: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:130201:19)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
+      at Timer.processTimers (timers.js:223:10)
+
+npm manifest: 
+  {
+    "name": "ts",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:dvxiaofan/rtd.git",
+    "author": "xiaofan <1353815633@qq.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
